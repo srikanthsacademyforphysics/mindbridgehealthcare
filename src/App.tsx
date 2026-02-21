@@ -33,9 +33,10 @@ function App() {
             </div>
 
             <div className="hidden md:flex items-center space-x-12">
-              <a href="#care" className="text-gray-800 hover:text-emerald transition-colors font-medium text-lg">Care</a>
+              <a href="#features" className="text-gray-800 hover:text-emerald transition-colors font-medium text-lg">Features</a>
               <a href="#about" className="text-gray-800 hover:text-emerald transition-colors font-medium text-lg">About</a>
               <a href="#resources" className="text-gray-800 hover:text-emerald transition-colors font-medium text-lg">Resources</a>
+              <a href="#contact" className="text-gray-800 hover:text-emerald transition-colors font-medium text-lg">Contact Us</a>
               <button className="bg-yellow hover:bg-yellow-dark text-gray-900 font-bold px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 text-lg">
                 Get Started
               </button>
@@ -53,9 +54,10 @@ function App() {
         {isMobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-200">
             <div className="px-4 py-4 space-y-4">
-              <a href="#care" className="block text-gray-700 hover:text-emerald transition-colors font-medium">Care</a>
+              <a href="#features" className="block text-gray-700 hover:text-emerald transition-colors font-medium">Features</a>
               <a href="#about" className="block text-gray-700 hover:text-emerald transition-colors font-medium">About</a>
               <a href="#resources" className="block text-gray-700 hover:text-emerald transition-colors font-medium">Resources</a>
+              <a href="#contact" className="block text-gray-700 hover:text-emerald transition-colors font-medium">Contact Us</a>
               <button className="w-full bg-yellow hover:bg-yellow-dark text-gray-900 font-bold px-6 py-3 rounded-full transition-colors">
                 Get Started
               </button>
@@ -89,17 +91,10 @@ function App() {
             <div className="animate-fade-in relative">
               <div className="bg-gradient-to-br from-teal-200 via-emerald-300 to-teal-400 rounded-3xl overflow-hidden shadow-2xl relative" style={{ height: '500px' }}>
                 <img
-                  src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg"
+                  src="/image 1.png"
                   alt="Happy family playing board game together at home"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute bottom-16 right-8 w-24 h-24 bg-emerald rounded-full opacity-60"></div>
-                <div className="bg-white rounded-2xl p-8 shadow-lg relative z-10 max-w-md mx-auto mt-32">
-                  <h3 className="text-xl font-heading font-bold text-gray-800 mb-3">Family Care Dashboard</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Parent monitoring children's therapy progress while coordinating care across the whole family
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -107,18 +102,16 @@ function App() {
       </section>
 
       {/* Kids Section */}
-      <section id="care" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 animate-slide-up relative">
-              <div className="bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 rounded-3xl p-8 shadow-xl relative overflow-hidden" style={{ height: '480px' }}>
-                <div className="absolute bottom-0 left-0 w-full h-16 bg-yellow-500 opacity-80"></div>
-                <div className="bg-white rounded-2xl p-8 shadow-lg relative z-10 max-w-md mx-auto mt-32">
-                  <h3 className="text-lg font-heading font-bold text-gray-800 mb-3">Parent-Child Therapy Monitoring</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Mother observing child's interactive CBT game while tracking progress on parent dashboard
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-yellow-200 via-yellow-300 to-yellow-400 rounded-3xl overflow-hidden shadow-xl relative" style={{ height: '480px' }}>
+                <img
+                  src="/image 2.png"
+                  alt="Mother baking with two children in kitchen"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
             </div>
 
@@ -174,14 +167,12 @@ function App() {
             </div>
 
             <div className="animate-slide-up relative">
-              <div className="bg-gradient-to-br from-blue-300 via-blue-200 to-teal-300 rounded-3xl p-8 shadow-xl relative overflow-hidden" style={{ height: '480px' }}>
-                <div className="absolute bottom-0 left-0 w-full h-24 bg-teal-400"></div>
-                <div className="bg-white rounded-2xl p-8 shadow-lg relative z-10 max-w-md mx-auto mt-32">
-                  <h3 className="text-lg font-heading font-bold text-gray-800 mb-3">Teen Privacy + Parent Monitoring</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Teen messaging therapist privately while parent views aggregate progress dashboard
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-blue-300 via-blue-200 to-teal-300 rounded-3xl overflow-hidden shadow-xl relative" style={{ height: '480px' }}>
+                <img
+                  src="/image 3.png"
+                  alt="Teen therapy session"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -193,14 +184,12 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 animate-slide-up relative">
-              <div className="bg-gradient-to-br from-purple-300 via-purple-200 to-pink-200 rounded-3xl p-8 shadow-xl relative overflow-hidden" style={{ height: '480px' }}>
-                <div className="absolute bottom-0 left-0 w-full h-24 bg-purple-400"></div>
-                <div className="bg-white rounded-2xl p-8 shadow-lg relative z-10 max-w-md mx-auto mt-32">
-                  <h3 className="text-lg font-heading font-bold text-gray-800 mb-3">Whole Family Care Coordination</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Parent in therapy session while managing children's care schedules on unified platform
-                  </p>
-                </div>
+              <div className="bg-gradient-to-br from-purple-300 via-purple-200 to-pink-200 rounded-3xl overflow-hidden shadow-xl relative" style={{ height: '480px' }}>
+                <img
+                  src="/image 4.png"
+                  alt="Family biking together in park"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
               </div>
             </div>
 
